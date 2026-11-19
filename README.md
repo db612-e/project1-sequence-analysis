@@ -3,7 +3,7 @@
 
 ### Title & purpose
 
-This code compares sequencing reads from S. pombe samples with a reference sequence to identify mismatches between them. It investigates whether treatment using a genotoxic agent changes mutation patterns compared to wild type/controls. 
+This code compares sequencing reads from S. pombe samples with a reference sequence to identify mismatches between them. It investigates whether treatment using a genotoxic agent changes mutation patterns compared to controls. 
 
 ### How to run the program
 
@@ -11,9 +11,9 @@ Open C7147_Project_1_assessment.ipynb in Google Colab and Run all. The data and 
 
 ### Inputs and outputs
 
-Input: a reference string with 200 nucleotides and a list of dictionaries containing information from sequencing reads (read_id, sample, group, sequence).
+Inputs: a reference string with 200 nucleotides and a list of dictionaries containing information from sequencing reads (read_id, sample, group, sequence).
 
-Output: Summary dictionaries for each sample, two tables for both treatment and control groups (sample results & substitutions)
+Outputs: Summary dictionaries for each sample, two tables for both treatment and control groups (sample results & substitutions), and Welch's t test for the top three mismatch positions.
 
 ### Code design
 
@@ -23,4 +23,4 @@ Helper functions were defined within the main functions.
 
 ### Testing
 
-All functions were tested using constructed test datasets with a range of different types of inputs. Normal inputs, edge cases, and invalid inputs were used to test the code.
+All functions were tested using constructed test datasets with a range of different types of inputs. Normal inputs, edge cases, and invalid inputs were used to test the code. 
